@@ -1,0 +1,6 @@
+\select@language {dutch}
+\contentsline {chapter}{\numberline {1}Horloges}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Je plaats op een ronde Aarde}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Inleiding}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Co\"ordinaten op een boloppervlak}{3}{section.2.2}
+\contentsline {chapter}{\numberline {3}Astrolabium}{4}{chapter.3}

@@ -1,28 +1,82 @@
-\documentclass[a4paper,10pt]{article}
+% Template voor een kampprogramma van de
+% Stichting Vierkant voor Wiskunde. Copyright 2000-2005,2011-2012:
+% M.P. Alberts, J.C.C. Langeveld, M. Hendriks, W.J. Palenstijn.
+% Meest recente update: 1-6-2012
+
+% De 'begeleider' optie produceert een begeleidersversie.
+% De 'deelnemer' optie produceert een deelnemersversie (zonder antwoorden).
+% Zonder 'begeleider' en 'deelnemer' wordt een voorlopige versie gemaakt,
+%  met antwoorden, en met de huidige datum aangegeven.
+
+%\documentclass[begeleider]{kampprogramma}
+%\documentclass[deelnemer]{kampprogramma}
+\documentclass{kampprogramma}
+
 \usepackage[utf8]{inputenc}
 %\usepackage[dutch]{babel}
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{graphics}
 
-\title{Navigatie \\ Kampprogramma VIERKANT B-2018}
-\author{Eveline Visee \\ Gideon Wormeester}
-\date{\today}
+
+\titel{Navigatie}
+
+\auteurs{
+Eveline Vissee\\
+Gideon Wormeester\\
+}
+
+% ------- Hier de naam van het (.eps) bestand met de kaftillustratie
+% Je kan dit commando ook weglaten als je nog geen plaatje hebt.
+\illustratie{vierkantlogo}
+% -------
+
+% ------- Hier het kamp waarvoor het programma is. (A/B/C + jaar)
+\kamp{Zomerkamp B 2018}
+% -------
+
+
 \begin{document}
-\maketitle
 
-\textcolor{blue}{To do: gebruik Vierkant \LaTeX\ class.}
-\section*{Inleiding}
+\voorpagina
+
+\voorwoord
 hallo!
+
+% ------- Legenda
+%
+% In de legenda worden symbolen voor opgaven uitgelegd.
+% Alleen de daadwerkelijk in het programma gebruikte symbolen worden uitgelegd.
+%
+% De symbolen hebben de volgende betekenis:
+% \ster : moeilijke opgave
+% \vinger : deze opgave heeft een hint
+% \schaar : dit is een praktische opdracht
+% \gr : je mag/moet een grafische rekenmachine gebruiken voor deze opgave
+% \discussie : dit is een discussie-opgave
+%
+% Zie het stukje 'Opgave' hieronder over hoe je de symbolen bij een opgave zet
+
+\legenda
+
+
+\inhoudsopgave
+
+% ------- Hier begint het eigenlijke programma
 
 \input{1_practicum}
 
-\section{Kompas: breedte- en lengtegraden}
+\input{2_ronde_aarde}
 
 \input{3_astrolabium}
 
-\section{Avondpracticum}
+%\section{Avondpracticum}
 
-\section{GPS}
+%\section{GPS}
+
+% ------- Hier eindigt het eigenlijke programma
+
+\hintsantwoorden
 
 \end{document}
