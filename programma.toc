@@ -3,4 +3,10 @@
 \contentsline {chapter}{\numberline {2}Je plaats op een ronde Aarde}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Inleiding}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Co\"ordinaten op een boloppervlak}{3}{section.2.2}
-\contentsline {chapter}{\numberline {3}Astrolabium}{4}{chapter.3}
+\contentsline {section}{\numberline {2.3}Kaartprojecties}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Kompas als navigatie instrument}{4}{section.2.4}
+\contentsline {chapter}{\numberline {3}Astrolabium}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Moderne nagivatie}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Touwtjes-trilateratie}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Snijdende Cirkels}{6}{section.4.2}
+\contentsline {section}{\numberline {4.3}Plaatsbepaling zonder tijd?}{6}{section.4.3}
