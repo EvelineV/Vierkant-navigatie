@@ -1,15 +1,149 @@
-\chapter{Moderne nagivatie}
+\chapter{Moderne navigatie}
 
 Dit hoofdstuk zal vooral ingaan op de principes van trilateratie. De deelnemers vinden uit hoe trilateratie gebruikt kan worden om plaats te bepalen en hoeveel vaste punten (satellieten) nodig zijn voor plaatsbepaling. Daarnaast wordt ingegaan op het feit dat voor plaatsbepaling met GPS alle partijen een zeer accurate klok moeten hebben, wat doorgaans niet het geval is in een GPS-ontvanger.
 
 \section{Touwtjes-trilateratie}
 
-Praktische opdrachten waar een deelnemer \'e\'en of meerdere touwtjes van vaste lengte vasthoudt, terwijl de andere kant van de touwtjes worden vastgehouden door andere deelnemers/begeleiders. Doel is om het aantal vrijheidsgraden te bepalen als functie van het aantal satellieten.
+\begin{opgave}
+	Pak samen met iemand anders in jouw groepje een stuk touw en ga zo staan dat elk het touw bij het uiteinde vast heeft en het touw tussen jullie strak staat.
+
+	Als je precies weet wat de positie is van de andere persoon en wat de lengte is van het touw, weet je dan ook precies wat jouw positie is? Waarom wel/niet?
+	\begin{antwoord}
+		Nee, als \'e\'en van de personen stil staat, kan de ander in een cirkel rondlopen.
+	\end{antwoord}
+\end{opgave}
+
+\begin{opgave}
+	Zoek nu een derde persoon uit jouw groepje en een tweede stuk touw. \'E\'en persoon houdt van beide touwen een van de uiteinden vast en de twee andere personen houden elk van \'e\'en van de touwen het andere uiteinde vast. Ga zo staan dat beide touwen strak staan.
+
+	Als je precies weet wat de posities van de twee personen die \'e\'en touw vasthouden zijn en wat de lengte van beide touwen is, heb je dan voldoende informatie om de positie van de derde persoon te bepalen?
+	\begin{antwoord}
+		Alleen als de touwen exact in elkaars verlengde liggen. Als dat niet zo is, dan heeft het centrale punt de vrijheid om zich te bewegen in een cirkel rondom de rechte lijn tussen beide uiteinden. Als deze beweging zich tot twee dimensies beperkt, dan zijn er 2 punten waar de centrale persoon kan staan.
+	\end{antwoord}
+\end{opgave}
+
+\begin{opgave}
+	Herhaal het proces uit de vorige twee opgaven, maar nu met 3 stukken touw en 4 personen. \'E\'en persoon houdt van alle touwen \'e\'en uiteinde vast en de overige personen van elk touw ieder \'e\'en uiteinde.
+
+	Kan de persoon met alle uiteindes in handen nu zijn of haar positie bepalen als de touwen allemaal strak staan en de posities 	van de overige personen en de lengtes van de touwen bekend zijn?
+	\begin{antwoord}
+		Als de touwen allemaal in hetzelfde vlak liggen, dat wil zeggen, als alle uiteindes op min of meer dezelfde hoogte worden 	vastgehouden, dan wel. Maar oplettende deelnemers merken wellicht op dat als de centrale persoon lager of hoger is dan de 			andere drie (bijvoorbeeld omdat deze bukt of op een meubelstuk staat), er nog een andere positie is waarin alle touwen 				strak staan.
+	\end{antwoord}
+\end{opgave}
+
+Waar je in deze opgaven mee bezig bent geweest heet "trilateratie". Dit is een techniek om de positie van een onbekend punt te bepalen aan de hand van de posities van enkele andere punten en de afstand tot deze punten.
+
+Trilateratie staat aan de basis van de techniek die vrijwel iedereen tegenwoordig gebruikt voor plaatsbepaling en navigatie: GPS. Voordat we verder gaan met GPS, kijken we eerst nog even verder naar trilateratie.
 
 \section{Snijdende Cirkels}
 
-Een alternatieve methode om het trilateratie-probleem te illustreren. Hier worden de mogelijke posities bepaald aan de hand van snijpunten van cirkels (in 2D, of boloppervlakken in 3D). Deze sectie is individueel en deelnemers kunnen hier direct mee beginnen als onvoldoende anderen beschikbaar zijn voor de touwtjes.
+\begin{opgave}
+	We gaan met behulp van trilateratie de positie van een onbekend punt $P$ bepalen.
+\begin{subopgave}
+		Teken in je schrift een punt $A$. Als je weet dat het punt $P$ op een afstand van 3~cm van $A$ ligt, waar zou punt $P$ dan kunnen liggen? Teken de mogelijke locaties waar punt $P$ kan liggen in je schrift.
+\end{subopgave}
+\begin{subopgave}
+		Teken een tweede punt $B$ op een paar centimeter van punt $A$. Als je weet dat het punt $P$ op een afstand van 4~cm van $B$ ligt, waar zou $P$ dan kunnen liggen? Teken de mogelijke locaties in je schrift. 
+\end{subopgave}
+\begin{subopgave}
+		Hoeveel locaties zijn er die op de juiste afstand van zowel punt $A$ als punt $B$ liggen? Wat is er nodig om het punt $P$ op unieke wijze vast te leggen?
+\end{subopgave}
+\end{opgave}
+
+In de vorige opgave heb je gezien dat in een plat vlak (zoals op een vel papier), je de positie van een punt vrijwel volledig kunt vastleggen als je de afstand tussen het punt en twee andere punten (met bekende positie) kent. De mogelijke posities zijn in dit geval de snijpunten van de cirkels rondom de punten waarvan de positie bekend is. In de meeste gevallen zullen dit twee snijpunten zijn.
+
+\begin{opgave}
+	Kun je een situatie bedenken waarin twee cirkels slechts \'e\'en punt gemeen hebben? Wat zegt dit over de plek van het onbekende punt ten opzichte van de bekende punten?
+\end{opgave}
+
+\begin{opgave}
+	Tot hoeveel bekende punten moet je de afstand weten om zeker te zijn dat je de locatie van een onbekend punt op unieke wijze kunt bepalen als alle punten in een vlak liggen?
+\end{opgave}
+
+In een plat vlak is een cirkel de verzameling van punten die op een gegeven afstand van een centraal punt liggen.
+
+\begin{opgave}
+	Hoe ziet de verzameling punten die op een gegeven afstand van een centraal punt liggen er uit in drie-dimensionale ruimte?
+\end{opgave}
+
+Als je jouw afstand tot een vast punt kent, dan is jouw mogelijke locatie een punt op het boloppervlak om het bekende punt. Ken je de afstand tot 2 bekende punten, dan ligt jouw locatie op een snijpunt van twee boloppervlakken
+
+\begin{opgave}
+	Hoe ziet de verzameling van de snijpunten van twee boloppervlakken er uit?
+\end{opgave}
+
+Aannemend dat we niet in het grensgeval zitten waarbij de doorsnede van de twee boloppervlakken uit exact \'e\'en punt bestaat, hebben we dus nog niet voldoende informatie om de positie exact te bepalen.
+
+\begin{opgave}[\vinger]
+	Tot welke vorm krimpt de verzameling van snijpunten als we een derde vast punt met bekende afstand toevoegen?
+	\begin{hint}
+		De verzameling snijpunten van 2 boloppervlakken is een cirkel. Hoe ziet de verzameling snijpunten van een cirkel met een boloppervlak er uit?
+	\end{hint}
+\end{opgave}
+
+\begin{opgave}
+	\begin{subopgave}
+		In drie-dimensionale ruimte, hoeveel bekende punten, waarvan je de afstand tot jouw locatie kent, zijn er nodig om altijd zeker te zijn dat je jouw locatie precies kunt bepalen? 
+	\end{subopgave}
+	\begin{subopgave}		
+		In het gunstigste geval, wat is het kleinste aantal punten dat je nodig hebt voor plaatsbepaling?
+	\end{subopgave}
+\end{opgave}
+
+Het Global Positioning System (GPS) werkt met dit principe van trilateratie. Een flink aantal satellieten draaien in diverse banen om de aarde. Deze satellieten zenden continu een signaal uit met, onder andere, hun huidige positie. Als een GPS ontvanger (bijvoorbeeld een smartphone) de positie van deze satellieten weet en kan meten wat de afstand is tussen de ontvanger en voldoende satellieten, dan kan de ontvanger z'n positie uitrekenen.
+
+Als de ontvanger van onvoldoende satellieten een signaal ontvangt, dan is nauwkeurige plaatsbepaling niet goed mogelijk. Toch zijn er methodes om in dergelijke situaties met redelijke aannames de plaats te bepalen.
+
+\begin{opgave}
+	Als de ontvanger \'e\'en satelliet te weinig kan ontvangen, hoe zou deze dan alsnog z'n locatie kunnen bepalen?
+	\begin{antwoord}
+		Met \'e\'en satelliet te weinig zijn er 2 mogelijke locaties waar de ontvanger zich zou kunnen bevinden. Maar in vrijwel alle gevallen bevindt slechts 1 van de 2 mogelijke locaties zich op het aardoppervlak. Het andere punt kan uitgesloten worden omdat het zich diep onder de grond of hoog in de lucht bevindt.
+	\end{antwoord}
+\end{opgave}
 
 \section{Plaatsbepaling zonder tijd?}
 
-Bepalen van de afstand tussen ontvanger en GPS-satelliet vereist een zeer nauwkeurige klok (opgave: schat te verwachten fout ten gevolge van kleine onnauwkeurigheden van de klok van de ontvanger). Omdat ontvangers deze normaalgesproken niet hebben, moet de tijd bepaald worden uit signalen van de satellieten. In de praktijk betekent dit het toevoegen van een extra onbekende aan de plaatsbepalingsvergelijkingen en daarmee de noodzaak van een extra satelliet (= extra vergelijking) voor nauwkeurige plaatsbepaling.
+Hiervoor hebben we gezien hoe we ozne locatie kunnen bepalen als we de afstand kennen tot 4 (of meer) satellieten, we onze exacte locatie kunnen bepalen. Maar het probleem is nu: Hoe bepaalt een GPS ontvanger de afstand tot een satelliet?
+
+\begin{opgave}[\discussie]
+	Bespreek met je groepje of je een manier kunt bedenken waarmee een GPS ontvanger de afstand tot een satelliet kan bepalen.
+\end{opgave}
+
+Het signaal van een satelliet verplaatst zich met de snelheid van het licht, ongeveer 300.000 km/s. Dus als de GPS ontvanger kan meten hoe lang het signaal onderweg is geweest van de satelliet naar de ontvanger, dan kan daarmee de afstand worden berekend.
+
+\begin{opgave}
+	Bedenk een manier waarop de ontvanger kan bepalen hoe lang het signaal onderweg is geweest.
+	\begin{antwoord}
+		Er zijn meerdere mogelijkheden. Een mogelijkheid is dat de satelliet op vooraf vastgestelde tijdstippen een signaal verstuurt (bijvoorbeeld iedere seconde). Een andere mogelijkheid is dat het tijdstip van verzenden als boodschap met het signaal mee wordt gestuurd. In alle gevallen is het essentieel dat de GPS ontvanger een nauwkeurige klok heeft.
+	\end{antwoord}
+\end{opgave}
+
+GPS satellieten hebben zeer nauwkeurige atoomklokken aan boord. In het signaal van een GPS satelliet zit het tijdstip van verzenden verwerkt. Door het tijdstip van verzenden te vergelijken met het tijdstip van ontvangst kan de ontvanger bepalen hoe lang het signaal onderweg is geweest.
+
+\begin{opgave}
+	\begin{subopgave}
+		Als de klok van de GPS ontvanger 0,1 seconde afwijkt van de klok van de GPS satelliet, hoe groot is dan de afwijking in de afstand die de ontvanger uitrekent?
+	\end{subopgave}
+	\begin{subopgave}
+		Wat als de afwijking van de klok 0,01 seconde is? Of 0,001 seconde?
+	\end{subopgave}
+	\begin{subopgave}
+		Veel GPS ontvangers kunnen de plaats op enkele meters nauwkeurig bepalen. Maak een schatting van hoeveel een klok maximaal mag afwijken van de satellietklok om een dergelijke nauwkeurigheid te behalen. Is dit realistisch?
+	\end{subopgave}
+\end{opgave}
+
+In plaats van het inbouwen van een zeer nauwkeurige klok in iedere GPS ontvanger, is het veel makkelijker om bij elke plaatsbepaling de tijd uit te rekenen aan de hand van de signalen van satellieten.
+
+\begin{opgave}[\ster\vinger]
+	Als de ontvanger geen (nauwkeurige) klok bevat, wat is er nodig voor de ontvanger om met behulp van de satelliet signalen de tijd bepalen?
+	\begin{hint}
+		Bedenk dat de ontvanger nu naast de co\"ordinaten $(x, y, z)$ ook de tijd $t$ moet bepalen. Beschouw je tijd als een extra dimensie, dan moeten er dus eigenlijk de co\"ordinaten $(x, y, z, t)$ bepaald worden.
+	\end{hint}
+	\begin{antwoord}
+		In plaats van de co\"ordinaten in drie-dimensionale ruimte, moeten de co\"ordinaten in vier-dimensionale ruimte-tijd worden bepaald. Net zoals de overstap van 2 naar 3 dimensies betekent dat het minimale aantal bekende punten stijgt van 3 naar 4, zorgt de stap van 3 naar 4 dimensies ervoor dat het minimale aantal punten stijgt naar 5. Er zijn dus 5 satellieten nodig voor een nauwkeurige plaatsbepaling als de ontvanger geen nauwkeurige klok heeft (zonder gebruik te maken van extra aannames zoals dat de ontvanger zich dicht bij het aardoppervlak bevindt).
+	\end{antwoord} 
+\end{opgave}
+
+\section{De navigatie vergelijkingen}
+
+De vergelijkingen voor plaatsbepaling en een aanpak om deze op te lossen. Ik weet nog niet of dit niet te moeilijk / lang is voor de doelgroep. 
