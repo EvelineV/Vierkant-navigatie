@@ -9,6 +9,7 @@ In dit hoofdstuk ga je leren wat er bij komt kijken om te navigeren op een ronde
 \section{Co\"ordinaten op een boloppervlak}
 
 %\includegraphics[draft]{Carthesisch}
+[plaatje ontbreekt]
 
 Hierboven zie je een voorbeeld van een plat rooster. Misschien heb je dit al eerder gezien tijdens de wiskundeles. Zo'n rooster zou je kunnen gebruiken om over een kaart heen te leggen. Langs de \textit{x}-as en \textit{y}-as staan getallen waarmee we de co\"ordinaten van punten in het rooster kunnen bepalen. Je kunt het punt met \textit{x} = 2 en \textit{y} = 3 vinden door op de \textit{x}-as de waarde 2 op te zoeken en op de \textit{y}-as de waarde 3. Het gezochte punt is vervolgens te vinden op de plek waar de 2 lijnen vanuit de gevonden punten op de assen elkaar snijden. Een korte notatie voor de co\"ordinaten van dit punt is $(2, 3)$.
 
@@ -21,12 +22,73 @@ Hierboven zie je een voorbeeld van een plat rooster. Misschien heb je dit al eer
 	\end{subopgave}
 \end{opgave}
 
-Rest van de sectie:
+Omdat de Aarde een bol is\footnote{Precies gezegd is de Aarde geen perfecte bol, maar een afgeplatte elipso\"ide. De straal van de Aarde bij de evenaar is iets groter dan bij de polen. In dit onderzoeksprogramma gaan we echter uit van een bol.} hebben we voor plaatsen op het aardoppervlak een ander systeem van co\"ordinaten nodig, de zogenaamde bolco\"ordinaten. In plaats van \textit{x} en \textit{y} waardes, praten we over lengtegraden en breedtegraden.
 
-\begin{itemize}
-	\item Introductie bolco\"ordinaten
-	\item Incompatibiliteit tussen bolco\"ordinaten en Carthesische co\"ordinaten
-\end{itemize}
+[plaatje van een bol met meridianen en parallelen getekend]
+
+De lengtegraad wordt gemeten langs de horizontale lijnen in bovenstaande figuur, terwijl de breedtegraad gemeten wordt langs de verticale lijnen. Lijnen met constante lengtegraad worden ook wel meridianen genoemd. Lijnen met constante breedtegraad heten parallelen. De belangrijkste meridiaan is de nul-meridiaan die door de Engelse plaats Greenwich loopt. Lengtegraden worden uitgedrukt ten opzichte van deze nul-meridiaan. Bij de parallelen is er een vergelijkbare situatie: De nul-parallel is beter bekend als de evenaar.
+
+Lengte- en breedtegraden worden uitgedrukt in graden, zoals de naam al impliceert. Lengtegraden lopen van $-180\degree$ tot $+180\degree$ en breedtegraden van $-90\degree$ tot $+90\degree$. Meestal worden in plaats van min- en plus-tekens echter de windrichtingen gebruikt. Zo wordt een breedtegraad van $40\degree$ boven de evenaar geschreven als $40\degree N$ (N van Noord) en een lengtegraad van $15\degree$ ten oosten van de nul-meridiaan wordt geschreven als $15\degree E$ (E van East, oftewel Oost).
+
+\begin{opgave}
+	Lengtegraden hebben een totaal bereik van $360\degree$, terwijl breedtegraden slechts een bereik van $180\degree$ hebben. Waarom is het niet nodig dat breedtegraden ook een bereik van $360\degree$ hebben?
+\end{opgave}
+
+\begin{opgave}
+	\begin{subopgave}
+		De straal van de Aarde is ongeveer 6400~km. Wat is de omtrek van de Aarde?
+		\begin{antwoord}
+			12800 km * $\pi$ = 40200 km
+		\end{antwoord}			
+	\end{subopgave}
+	\begin{subopgave}
+		Hoe ver moet je over de evenaar reizen om de lengtegraad van je positie met $1\degree$ te veranderen?
+		\begin{antwoord}
+			1/360 * 40200 km = 112 km
+		\end{antwoord}
+	\end{subopgave}
+	\begin{subopgave}
+		De parallel die door Heino loopt heeft een straal van ongeveer 3900~km. Hoe groot is de omtrek van deze parallel?
+		\begin{antwoord}
+			24500 km
+		\end{antwoord}
+	\end{subopgave}
+	\begin{subopgave}
+		Als je vanuit Heino $1\degree$ lengtegraad verplaatst, welke afstand leg je dan af?
+		\begin{antwoord}
+			68 km
+		\end{antwoord}
+	\end{subopgave}
+\end{opgave}
+
+Omdat het makkelijker is om het aardoppervlak plat weer te geven, hebben we een manier nodig om het bolvormige oppervlak op een plat rooster over te zetten. Een voor de hand liggende manier is om de boel zo af te beelden dat meridianen verticale lijnen worden op het platte rooster en parallelen horizontale lijnen.
+
+\begin{opgave}
+	Op het aardoppervlak staan parallelen en meridianen loodrecht op elkaar. Blijft dat nog steeds zo als we het aardoppervlak op bovenstaande manier afbeelden?
+	\begin{antwoord}
+		Ja.
+	\end{antwoord}
+\end{opgave}
+
+\begin{opgave}[\vinger]
+	\begin{subopgave}
+		In een plat rooster is de afstand tussen twee verticale lijnen overal hetzelfde. Is dit ook zo met meridianen op een boloppervlak?
+		\begin{hint}
+			Kijk nog eens naar je antwoorden 2 opgaven terug.
+		\end{hint}
+		\begin{antwoord}
+			Nee, de afstand tussen meridianen neemt af naarmate je verder van de evenaar komt en wordt 0 bij de polen.
+		\end{antwoord}
+	\end{subopgave}
+	\begin{subopgave}
+		 Wat heeft dit voor gevolgen als we meridianen en parallelen als verticale en horizontale lijnen in een vlak rooster afbeelden?
+		\begin{antwoord}
+			Afstanden die gelijk zijn in de vlakke projectie zijn niet noodzakelijkerwijs gelijk op het boloppervlak. De projectie is dus niet afstand-behoudend.
+		\end{antwoord}
+	\end{subopgave}
+\end{opgave}
+
+Deze manier van het afbeelden van de Aarde op een vlakke kaart heeft dus duidelijke nadelen. Daarom gaan we in de volgende sectie kijken naar verschillende manieren om de Aarde af te beelden. 
 
 \section{Kaartprojecties}
 
