@@ -1,15 +1,15 @@
 \select@language {dutch}
-\contentsline {chapter}{\numberline {1}Horloges}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Je plaats op een ronde Aarde}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Inleiding}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Co\"ordinaten op een boloppervlak}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}De weg vinden met een kompas}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Kaartprojecties}{6}{section.2.4}
-\contentsline {chapter}{\numberline {3}Astrolabium}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Moderne navigatie}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Touwtjes-trilateratie}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Snijdende Cirkels}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Plaatsbepaling zonder tijd?}{11}{section.4.3}
-\contentsline {section}{\numberline {4.4}De navigatie vergelijkingen}{12}{section.4.4}
-\contentsline {chapter}{Hints bij de opgaven}{13}{section.4.4}
-\contentsline {chapter}{Antwoorden}{14}{section.4.4}
+\contentsline {chapter}{\numberline {1}Navigeren met je horloge}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Je plaats op een ronde Aarde}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Inleiding}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Co\"ordinaten op een boloppervlak}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}De weg vinden met een kompas}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Kaartprojecties}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}Astrolabium}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}Moderne navigatie}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Touwtjes-trilateratie}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Snijdende Cirkels}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Plaatsbepaling zonder tijd?}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}De navigatie vergelijkingen}{13}{section.4.4}
+\contentsline {chapter}{Hints bij de opgaven}{14}{section.4.4}
+\contentsline {chapter}{Antwoorden}{15}{section.4.4}
