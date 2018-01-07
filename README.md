@@ -6,6 +6,7 @@ Navigatie kampprogramma bestemd voor Vierkant voor Wiskunde kamp B - 2018
 - `astrolabe_52N_karton.pdf`, op stevig papier.
 - `astrolabe_52N_plastic.pdf`, op transparant (overhead projector sheets?), zoveel als er deelnemers zijn.
 - 1 splitpen voor iedere deelnemer
+- Gaatjestang: om gat voor de splitpen in het plastic te maken
 - (optioneel) Een of meerdere wereldbollen/globes ter illustratie van sommige onderwerpen in hoofdstuk 2.
 - touw, stukken van 1-2 meter lang, ~1 per deelnemer (bij bouwmarkt te vinden voor <€10, knippen op zondagavond).
 
