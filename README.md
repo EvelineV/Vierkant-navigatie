@@ -2,8 +2,10 @@
 Navigatie kampprogramma bestemd voor Vierkant voor Wiskunde kamp B - 2018
 
 ## Nodig:
-- werkblad horloge: aantal deelnemers / 3
-- `astrolabe_52N.pdf`, bladzijde 3 en 4 op stevig papier, bladzijde 5 op plastic (overhead projector sheets?), zoveel als er deelnemers zijn.
+- werkblad horloge: aantal deelnemers / 3, gewoon papier
+- `astrolabe_52N_karton.pdf`, op stevig papier.
+- `astrolabe_52N_plastic.pdf`, op transparant (overhead projector sheets?), zoveel als er deelnemers zijn.
+- 1 splitpen voor iedere deelnemer
 - (optioneel) Een of meerdere wereldbollen/globes ter illustratie van sommige onderwerpen in hoofdstuk 2.
 - touw, stukken van 1-2 meter lang, ~1 per deelnemer (bij bouwmarkt te vinden voor <€10, knippen op zondagavond).
 
