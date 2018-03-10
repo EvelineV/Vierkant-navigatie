@@ -8,23 +8,48 @@ In dit hoofdstuk ga je leren wat er bij komt kijken om te navigeren op een ronde
 
 \section{Co\"ordinaten op een boloppervlak}
 
-%\includegraphics[draft]{Carthesisch}
-[plaatje ontbreekt]
+\begin{tikzpicture}
+    \begin{axis}[axis lines = middle, grid = both, 
+                 xmin = -5, xmax = 5, ymin = -3, ymax = 3,
+                 x = 1cm, y = 1cm,
+                 xtick = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4,5},
+                 ytick = {-3, -2, -1, 0, 1, 2, 3}]
+        \addplot[mark=*] coordinates {(3,-2)} node[pin=150:{$P$}]{} ;
+    \end{axis}
+\end{tikzpicture}
 
 Hierboven zie je een voorbeeld van een plat rooster. Misschien heb je dit al eerder gezien tijdens de wiskundeles. Zo'n rooster zou je kunnen gebruiken om over een kaart heen te leggen. Langs de \textit{x}-as en \textit{y}-as staan getallen waarmee we de co\"ordinaten van punten in het rooster kunnen bepalen. Je kunt het punt met \textit{x} = 2 en \textit{y} = 3 vinden door op de \textit{x}-as de waarde 2 op te zoeken en op de \textit{y}-as de waarde 3. Het gezochte punt is vervolgens te vinden op de plek waar de 2 lijnen vanuit de gevonden punten op de assen elkaar snijden. Een korte notatie voor de co\"ordinaten van dit punt is $(2, 3)$.
 
 \begin{opgave}
 	\begin{subopgave}
 		Waar ligt het punt (4, 1) in bovenstaand rooster?
+		\begin{antwoord}		
+			\begin{tikzpicture}
+			    \begin{axis}[axis lines = middle, grid = both, 
+		                 xmin = -5, xmax = 5, ymin = -3, ymax = 3,
+                		 x = 1cm, y = 1cm,
+        		         xtick = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4,5},
+		                 ytick = {-3, -2, -1, 0, 1, 2, 3}]
+			        \addplot[mark=*] coordinates {(3,-2)} node[pin=150:{$P$}]{} ;
+			        \addplot[mark=*] coordinates {(4,1)} node[pin=150:{$(4, 1)$}]{} ;
+			    \end{axis}
+			\end{tikzpicture}
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Wat zijn de co\"ordinaten van het in het bovenstaand rooster aagegeven punt P?
+		\begin{antwoord}
+			$(3, -2)$
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
 Omdat de Aarde een bol is\footnote{Precies gezegd is de Aarde geen perfecte bol, maar een afgeplatte elipso\"ide. De straal van de Aarde bij de evenaar is iets groter dan bij de polen. In dit onderzoeksprogramma gaan we echter uit van een bol.} hebben we voor plaatsen op het aardoppervlak een ander systeem van co\"ordinaten nodig, de zogenaamde bolco\"ordinaten. In plaats van \textit{x} en \textit{y} waardes, praten we over lengtegraden en breedtegraden.
 
-[plaatje van een bol met meridianen en parallelen getekend]
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=15cm]{Parallels-and-Meridians.eps}
+\end{figure}
 
 De lengtegraad wordt gemeten langs de horizontale lijnen in bovenstaande figuur, terwijl de breedtegraad gemeten wordt langs de verticale lijnen. Lijnen met constante lengtegraad worden ook wel meridianen genoemd. Lijnen met constante breedtegraad heten parallelen. De belangrijkste meridiaan is de nul-meridiaan die door de Engelse plaats Greenwich loopt. Lengtegraden worden uitgedrukt ten opzichte van deze nul-meridiaan. Bij de parallelen is er een vergelijkbare situatie: De nul-parallel is beter bekend als de evenaar.
 
@@ -32,6 +57,9 @@ Lengte- en breedtegraden worden uitgedrukt in graden, zoals de naam al impliceer
 
 \begin{opgave}
 	Lengtegraden hebben een totaal bereik van $360\degree$, terwijl breedtegraden slechts een bereik van $180\degree$ hebben. Waarom is het niet nodig dat breedtegraden ook een bereik van $360\degree$ hebben?
+	\begin{antwoord}
+		Neem een cirkel, deze stelt de $360\degree$ aan lengtegraden op de evenaar voor. Roteer de cirkel nu om een as die door het midden van deze cirkel loopt. Bij het roteren vormt zich een boloppervlak. Merk op dat de cirkel slechts $180\degree$ geroteerd hoeft te worden om een volledige bol te maken, niet $360\degree$. Als de breedtegraden ook een bereik van $360\degree$ zouden hebben, dan zou ieder punt op Aarde twee sets co\"ordinaten hebben.
+	\end{antwoord}
 \end{opgave}
 
 \begin{opgave}
@@ -56,12 +84,17 @@ Lengte- en breedtegraden worden uitgedrukt in graden, zoals de naam al impliceer
 	\begin{subopgave}
 		Als je vanuit Heino $1\degree$ lengtegraad verplaatst, welke afstand leg je dan af?
 		\begin{antwoord}
-			68 km
+			$\frac{24500}{360} = 68$~km
 		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
 Omdat het makkelijker is om het aardoppervlak plat weer te geven, hebben we een manier nodig om het bolvormige oppervlak op een plat rooster over te zetten. Een voor de hand liggende manier is om de boel zo af te beelden dat meridianen verticale lijnen worden op het platte rooster en parallelen horizontale lijnen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=15cm]{Equirectangular_projection_SW.eps}
+\end{figure}
 
 \begin{opgave}
 	Op het aardoppervlak staan parallelen en meridianen loodrecht op elkaar. Blijft dat nog steeds zo als we het aardoppervlak op bovenstaande manier afbeelden?
@@ -121,18 +154,30 @@ Een pad waarop constant dezelfde (kompas)koers wordt gevolgd wordt een "loxodroo
 \begin{opgave}
 	\begin{subopgave}
 		Is er tussen twee punten op het aardoppervlak slechts \'e\'en loxodroom of  zijn er meerdere? Waarom?
+		\begin{antwoord}
+			Er zijn er meerdere. Merk op dat een loxodroom enkel vereist dat een constante kompaskoers gevolgd wordt, niet dat het het kortste pad is. In sommige vallen zijn er wel meerdere loxodromen die het kortste pad tussen twee punten vormen. Denk bijvoorbeeld aan de 2 polen. De meridianen zijn loxodromen.
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Als je tussen twee punten reist en een zo kort mogelijke afstand wil afleggen, moet je dan een loxodroom volgen? Waarom wel/niet?
+		\begin{antwoord}
+			Nee. De korste afstand tussen twee punten volgt een grootcirkel, wat meestal geen loxodroom is.
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
 \begin{opgave}[\ster]
 	\begin{subopgave}
 		Bekijk de vlakke kaart van de Aarde uit de vorige sectie. Is een rechte lijn op deze kaart altijd een loxodroom? In welke gevallen wel en in welke gevallen niet?
+		\begin{antwoord}
+			Nee. Alleen rechte lijnen die volledig verticaal of horizontaal lopen stellen loxodromen voor (met een koers van $0\degree, 90\degree, 180\degree, 270\degree$. 
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Is de kaart uit de vorige sectie geschikt om kompaskoersen mee uit te zetten?
+		\begin{antwoord}
+			Nee. Omdat loxodromen niet per se rechte lijnen zijn op deze kaart, is het niet mogelijk om een directe kompaskoers te bepalen tussen twee punten. Als loxodromen wel rechte lijnen zouden zijn op de kaart, dan is het voldoende om simpelweg een rechte lijn tussen de twee punten te tekenen. Later komt een kaartprojectie aan bod waarbij dat mogelijk is.
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 	
@@ -143,10 +188,16 @@ Om deze reden zal een kompas dan ook vaak een afwijking hebben ten opzichte van 
 \begin{opgave}
 	\begin{subopgave}
 		Waar denk je dat deze afwijking het grootst is?
+		\begin{antwoord}
+			Op de meridiaan die door de magnetische pool loopt, tussen de magnetische en ware pool. Als je hier richting de magnetische pool kijkt, dan bevindt de ware pool zich achter je.
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Kun je plekken bedenken waar er juist geen afwijking is en het kompas ook naar het ware noorden wijst?
-	\end{subopgave}
+		\begin{antwoord}
+			Op de meridiaan die door de magnetische pool loopt, behalve op het stuk tussen beide polen. Vanuit punten op deze meridiaan gezien liggen de magnetische en ware pool in elkaars verlengde.
+		\end{antwoord}
+	\end{subopgave}	
 \end{opgave}
 
 In werkelijkheid wordt de afwijking van een kompas niet alleen bepaald door het verschil tussen magnetische noorden en ware noorden, maar ook door allerlei magnetische eigenschappen van materialen die in de grond zitten. Moderne navigatie met behulp van een kompas maakt daarom gebruik van complexe kaarten waarop overal op Aarde de kompasafwijking wordt aangegeven. Deze afwijking verandert ook nog eens met de tijd, waardoor zo nu en dan nieuwe correctie-kaarten moeten worden gemaakt.
@@ -155,16 +206,22 @@ In werkelijkheid wordt de afwijking van een kompas niet alleen bepaald door het 
 
 Na dit intermezzo over het kompas, gaan we weer terug naar onze pogingen om het aardoppervlak op een kaart af te beelden.
 
-Het afbeelden van de ronde Aarde op een platte map wordt ook wel een "kaartprojectie" genoemd. Er zijn veel verschillende kaartprojecties met elk hun eigen voordelen en nadelen. In de vorige sectie ben je er al eentje tegengekomen. Deze projectie wordt heeft vele namen, waaronder "vierkante platkaart" en "meridiaangetrouwe cilinderprojectie".
+Het afbeelden van de ronde Aarde op een platte map wordt ook wel een "kaartprojectie" genoemd. Er zijn veel verschillende kaartprojecties met elk hun eigen voordelen en nadelen. In de vorige sectie ben je er al eentje tegengekomen. Deze projectie wordt heeft vele namen, waaronder "vierkante platkaart"\ en "meridiaangetrouwe cilinderprojectie".
 
 De term "meridiaangetrouw" slaat op het feit dat met deze projectie afstanden van stukken die langs een meridiaan lopen (niet noodzakelijkerwijs dezelfde meridiaan) op schaal zijn. Dat wil zeggen dat twee stukken die elk een meridiaan volgen en op de kaart dezelfde lengte hebben, ook op de Aarde zelf dezelfde lengte hebben.
 
 \begin{opgave}
 	\begin{subopgave}
 		Is deze kaartprojectie ook "parallelgetrouw"?
+		\begin{antwoord}
+			Nee. Dit is eerder aan bod gekomen in opgave 2.3 en 2.5.
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Hoe zit het met afstanden van stukken die niet precies een meridiaan of een parallel volgen? Worden deze afstanden met constante schaal afgebeeld?
+		\begin{antwoord}
+			Nee.
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
@@ -172,20 +229,31 @@ Hoewel de vierkante platkaart een makkelijke projectie is om te maken en hij erg
 
 Een alternatieve kaartprojectie is de zogenaamde Mercator-projectie, genoemd naar de Vlaamse cartograaf Gerardus Mercator, die deze projectie als eerste heeft geintroduceerd. Hieronder staat een voorbeeld van de Mercator-projectie.
 
-[Plaatje Mercator-projectie]
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=15cm]{Mercator_projection_SW.eps}
+\end{figure}
 Een bijzondere eigenschap van de Mercator-projectie is dat deze richtingsgetrouw is. Dat betekent dat alle loxodromen rechte lijnen vormen op de kaart.
 
 \begin{opgave}
 	Als je als kapitein van een schip (zonder moderne hulpmiddelen) een route naar je bestemming moet vinden, gebruik je dan liever een vierkante platkaart of een Mercator-projectie? Waarom?
+	\begin{antwoord}
+		Een Mercator-projectie. Op deze kaart kan een koers worden bepaald door simpelweg het lijnstuk tussen oorsprong en bestemming te tekenen. Door tijdens de hele reis deze koers aan te houden, zal de bestemming uiteindelijk worden bereikt. Merk op dat deze koers niet per se de kortste route oplevert.
+	\end{antwoord}
 \end{opgave}
 
 \begin{opgave}
 	\begin{subopgave}
 		Is de Mercator-projectie meridiaangetrouw?
+		\begin{antwoord}
+			Nee. De projectie strekt zich in principe tot in het oneindige uit richting de polen. Dat betekent dat een afstand langs een meridiaan dicht bij een pool op de projectie willekeurig lang kan worden.
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Is de Mercator-projectie parallelgetrouw?
+		\begin{antwoord}
+			Nee. Om dezelfde reden als bij de vierkante platkaart: De kaart is overal even breed, terwijl de lengte van een parallel op het aardoppervlak niet overal gelijk is.
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
@@ -203,7 +271,7 @@ Tot slot maken we kennis met de zogenaamde "gnomonische projectie". Dit is een b
 \begin{opgave}
 	Geef een voorbeeld van grootcirkel op het aardoppervlak.
 	\begin{hint}
-		Denk aan de parallelen.
+		Denk aan de parallelen. Welke parallel is het grootste?
 	\end{hint}
 	\begin{antwoord}
 		De evenaar.
@@ -221,8 +289,13 @@ Een belangrijke eigenschap van grootcirkels is dat het kortste pad tussen twee p
 
 Hieronder staat een voorbeeld van een kaart met gnomonische projectie. Merk op dat deze projectiemethode minder dan de helft van de Aarde in \'e\'en keer kan afbeelden en dat naarmate je dichter bij de rand komt, vervormingen steeds sterker worden.
 
-[Placeholder plaatje gnomonische projectie]
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{Gnomonic_projection_SW.eps}
+\end{figure}
 
 \begin{opgave}
-	Zoek op de kaart met gnomonische projectie dezelfde twee punten op die je in opgave [opgave-referentie] ook al hebt opgezocht. Teken nu het kortste pad tussen deze twee punten en kijk terug naar wat je op de Mercator-projectie als kortste pad hebt aangegeven. Zat je dicht in de buurt met je eerste poging?
+	Zoek op de kaart met gnomonische projectie dezelfde twee punten op die je in opgave 2.13 ook al hebt opgezocht. Teken nu het kortste pad tussen deze twee punten en kijk terug naar wat je op de Mercator-projectie als kortste pad hebt aangegeven. Zat je dicht in de buurt met je eerste poging?
 \end{opgave}
+
+\newpage

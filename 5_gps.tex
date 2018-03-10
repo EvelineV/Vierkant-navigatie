@@ -39,37 +39,58 @@ Trilateratie staat aan de basis van de techniek die vrijwel iedereen tegenwoordi
 
 \begin{opgave}
 	We gaan met behulp van trilateratie de positie van een onbekend punt $P$ bepalen.
-\begin{subopgave}
+	\begin{subopgave}
 		Teken in je schrift een punt $A$. Als je weet dat het punt $P$ op een afstand van 3~cm van $A$ ligt, waar zou punt $P$ dan kunnen liggen? Teken de mogelijke locaties waar punt $P$ kan liggen in je schrift.
-\end{subopgave}
-\begin{subopgave}
+		\begin{antwoord}
+			Gebruik een passer en teken een cirkel met straal 3~cm om $A$.
+		\end{antwoord}
+	\end{subopgave}
+	\begin{subopgave}
 		Teken een tweede punt $B$ op een paar centimeter van punt $A$. Als je weet dat het punt $P$ op een afstand van 4~cm van $B$ ligt, waar zou $P$ dan kunnen liggen? Teken de mogelijke locaties in je schrift. 
-\end{subopgave}
-\begin{subopgave}
+		\begin{antwoord}
+			Teken een tweede cirkel met straal 4~cm van $B$. $P$ kan liggen op de snijpunten van de twee cirkels.
+		\end{antwoord}
+	\end{subopgave}
+	\begin{subopgave}
 		Hoeveel locaties zijn er die op de juiste afstand van zowel punt $A$ als punt $B$ liggen? Wat is er nodig om het punt $P$ op unieke wijze vast te leggen?
-\end{subopgave}
+		\begin{antwoord}
+			Er zijn 2 mogelijke locaties. Een derde punt $C$, met bijbehorende afstand tot het onbekende punt $P$ is nodig om de locatie van $P$ exact te bepalen.
+		\end{antwoord}
+	\end{subopgave}
 \end{opgave}
 
 In de vorige opgave heb je gezien dat in een plat vlak (zoals op een vel papier), je de positie van een punt vrijwel volledig kunt vastleggen als je de afstand tussen het punt en twee andere punten (met bekende positie) kent. De mogelijke posities zijn in dit geval de snijpunten van de cirkels rondom de punten waarvan de positie bekend is. In de meeste gevallen zullen dit twee snijpunten zijn.
 
 \begin{opgave}
 	Kun je een situatie bedenken waarin twee cirkels slechts \'e\'en punt gemeen hebben? Wat zegt dit over de plek van het onbekende punt ten opzichte van de bekende punten?
+	\begin{antwoord}
+		De cirkels raken elkaar in het ene punt. In dit geval ligt het onbekende punt op de lijn tussen de twee bekende punten.
+	\end{antwoord}
 \end{opgave}
 
 \begin{opgave}
 	Tot hoeveel bekende punten moet je de afstand weten om zeker te zijn dat je de locatie van een onbekend punt op unieke wijze kunt bepalen als alle punten in een vlak liggen?
+	\begin{antwoord}
+		3
+	\end{antwoord}
 \end{opgave}
 
 In een plat vlak is een cirkel de verzameling van punten die op een gegeven afstand van een centraal punt liggen.
 
 \begin{opgave}
 	Hoe ziet de verzameling punten die op een gegeven afstand van een centraal punt liggen er uit in drie-dimensionale ruimte?
+	\begin{antwoord}
+		Een boloppervlak.
+	\end{antwoord}
 \end{opgave}
 
 Als je jouw afstand tot een vast punt kent, dan is jouw mogelijke locatie een punt op het boloppervlak om het bekende punt. Ken je de afstand tot 2 bekende punten, dan ligt jouw locatie op een snijpunt van twee boloppervlakken
 
 \begin{opgave}
 	Hoe ziet de verzameling van de snijpunten van twee boloppervlakken er uit?
+		\begin{antwoord}
+			Deze verzameling is leeg (als de bollen te ver uit elkaar liggen) of bestaat uit een cirkel. In het grensgeval tussen beide situaties is er slechts een enkel snijpunt.
+		\end{antwoord}
 \end{opgave}
 
 Aannemend dat we niet in het grensgeval zitten waarbij de doorsnede van de twee boloppervlakken uit exact \'e\'en punt bestaat, hebben we dus nog niet voldoende informatie om de positie exact te bepalen.
@@ -79,14 +100,23 @@ Aannemend dat we niet in het grensgeval zitten waarbij de doorsnede van de twee 
 	\begin{hint}
 		De verzameling snijpunten van 2 boloppervlakken is een cirkel. Hoe ziet de verzameling snijpunten van een cirkel met een boloppervlak er uit?
 	\end{hint}
+	\begin{antwoord}
+		0, 1 of 2 punten. Dit is in feite dezelfde situatie als aan het begin van deze sectie, waarbij we twee snijdende cirkels bekeken.
+	\end{antwoord}
 \end{opgave}
 
 \begin{opgave}
 	\begin{subopgave}
 		In drie-dimensionale ruimte, hoeveel bekende punten, waarvan je de afstand tot jouw locatie kent, zijn er nodig om altijd zeker te zijn dat je jouw locatie precies kunt bepalen? 
+		\begin{antwoord}
+			4
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}		
 		In het gunstigste geval, wat is het kleinste aantal punten dat je nodig hebt voor plaatsbepaling?
+		\begin{antwoord}
+			2. Als het onbekende punt zich exact tussen de twee bekende punten bevindt.
+		\end{antwoord}				
 	\end{subopgave}
 \end{opgave}
 
@@ -123,12 +153,21 @@ GPS satellieten hebben zeer nauwkeurige atoomklokken aan boord. In het signaal v
 \begin{opgave}
 	\begin{subopgave}
 		Als de klok van de GPS ontvanger 0,1 seconde afwijkt van de klok van de GPS satelliet, hoe groot is dan de afwijking in de afstand die de ontvanger uitrekent?
+		\begin{antwoord}
+			$0,1 s * 300000 km/s = 30000 km$
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Wat als de afwijking van de klok 0,01 seconde is? Of 0,001 seconde?
+		\begin{antwoord}
+			$3000 km, 300 km$
+		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
 		Veel GPS ontvangers kunnen de plaats op enkele meters nauwkeurig bepalen. Maak een schatting van hoeveel een klok maximaal mag afwijken van de satellietklok om een dergelijke nauwkeurigheid te behalen. Is dit realistisch?
+		\begin{antwoord}
+			Om de afstand tot een satelliet met 1 meter nauwkeurigheid te bepalen, mag de klok van de ontvanger niet meer dan 3,3~ns afwijken van de satellietklok. Dit is veel nauwkeuriger dan niet-atoomklokken zijn, dus het is geen realistische oplossing.
+		\end{antwoord}
 	\end{subopgave}
 \end{opgave}
 
@@ -143,7 +182,3 @@ In plaats van het inbouwen van een zeer nauwkeurige klok in iedere GPS ontvanger
 		In plaats van de co\"ordinaten in drie-dimensionale ruimte, moeten de co\"ordinaten in vier-dimensionale ruimte-tijd worden bepaald. Net zoals de overstap van 2 naar 3 dimensies betekent dat het minimale aantal bekende punten stijgt van 3 naar 4, zorgt de stap van 3 naar 4 dimensies ervoor dat het minimale aantal punten stijgt naar 5. Er zijn dus 5 satellieten nodig voor een nauwkeurige plaatsbepaling als de ontvanger geen nauwkeurige klok heeft (zonder gebruik te maken van extra aannames zoals dat de ontvanger zich dicht bij het aardoppervlak bevindt).
 	\end{antwoord} 
 \end{opgave}
-
-\section{De navigatie vergelijkingen}
-
-De vergelijkingen voor plaatsbepaling en een aanpak om deze op te lossen. Ik weet nog niet of dit niet te moeilijk / lang is voor de doelgroep. 
