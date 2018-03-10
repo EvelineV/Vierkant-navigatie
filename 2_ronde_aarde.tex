@@ -16,6 +16,7 @@ In dit hoofdstuk ga je leren wat er bij komt kijken om te navigeren op een ronde
                  ytick = {-3, -2, -1, 0, 1, 2, 3}]
         \addplot[mark=*] coordinates {(3,-2)} node[pin=150:{$P$}]{} ;
     \end{axis}
+	\label{fig_carthesisch}
 \end{tikzpicture}
 
 Hierboven zie je een voorbeeld van een plat rooster. Misschien heb je dit al eerder gezien tijdens de wiskundeles. Zo'n rooster zou je kunnen gebruiken om over een kaart heen te leggen. Langs de \textit{x}-as en \textit{y}-as staan getallen waarmee we de co\"ordinaten van punten in het rooster kunnen bepalen. Je kunt het punt met \textit{x} = 2 en \textit{y} = 3 vinden door op de \textit{x}-as de waarde 2 op te zoeken en op de \textit{y}-as de waarde 3. Het gezochte punt is vervolgens te vinden op de plek waar de 2 lijnen vanuit de gevonden punten op de assen elkaar snijden. Een korte notatie voor de co\"ordinaten van dit punt is $(2, 3)$.
@@ -37,7 +38,7 @@ Hierboven zie je een voorbeeld van een plat rooster. Misschien heb je dit al eer
 		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
-		Wat zijn de co\"ordinaten van het in het bovenstaand rooster aagegeven punt P?
+		Wat zijn de co\"ordinaten van het in het bovenstaand rooster aangegeven punt P?
 		\begin{antwoord}
 			$(3, -2)$
 		\end{antwoord}
@@ -49,9 +50,11 @@ Omdat de Aarde een bol is\footnote{Precies gezegd is de Aarde geen perfecte bol,
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm]{Parallels-and-Meridians.eps}
+	\caption{parallellen en meridianen}
+	\label{fig_par_mer}
 \end{figure}
 
-De lengtegraad wordt gemeten langs de horizontale lijnen in bovenstaande figuur, terwijl de breedtegraad gemeten wordt langs de verticale lijnen. Lijnen met constante lengtegraad worden ook wel meridianen genoemd. Lijnen met constante breedtegraad heten parallelen. De belangrijkste meridiaan is de nul-meridiaan die door de Engelse plaats Greenwich loopt. Lengtegraden worden uitgedrukt ten opzichte van deze nul-meridiaan. Bij de parallelen is er een vergelijkbare situatie: De nul-parallel is beter bekend als de evenaar.
+De lengtegraad wordt gemeten langs de horizontale lijnen in bovenstaande figuur, terwijl de breedtegraad gemeten wordt langs de verticale lijnen. Lijnen met constante lengtegraad worden ook wel meridianen genoemd. Lijnen met constante breedtegraad heten parallellen. De belangrijkste meridiaan is de nul-meridiaan die door de Engelse plaats Greenwich loopt. Lengtegraden worden uitgedrukt ten opzichte van deze nul-meridiaan. Bij de parallellen is er een vergelijkbare situatie: De nul-parallel is beter bekend als de evenaar.
 
 Lengte- en breedtegraden worden uitgedrukt in graden, zoals de naam al impliceert. Lengtegraden lopen van $-180\degree$ tot $+180\degree$ en breedtegraden van $-90\degree$ tot $+90\degree$. Meestal worden in plaats van min- en plus-tekens echter de windrichtingen gebruikt. Zo wordt een breedtegraad van $40\degree$ boven de evenaar geschreven als $40\degree N$ (N van Noord) en een lengtegraad van $15\degree$ ten oosten van de nul-meridiaan wordt geschreven als $15\degree E$ (E van East, oftewel Oost).
 
@@ -89,15 +92,17 @@ Lengte- en breedtegraden worden uitgedrukt in graden, zoals de naam al impliceer
 	\end{subopgave}
 \end{opgave}
 
-Omdat het makkelijker is om het aardoppervlak plat weer te geven, hebben we een manier nodig om het bolvormige oppervlak op een plat rooster over te zetten. Een voor de hand liggende manier is om de boel zo af te beelden dat meridianen verticale lijnen worden op het platte rooster en parallelen horizontale lijnen.
+Omdat het makkelijker is om het aardoppervlak plat weer te geven, hebben we een manier nodig om het bolvormige oppervlak op een plat rooster over te zetten. Een voor de hand liggende manier is om de boel zo af te beelden dat meridianen verticale lijnen worden op het platte rooster en parallellen horizontale lijnen.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm]{Equirectangular_projection_SW.eps}
+	\caption{De aarde afgebeeld op een plat vlak}
+	\label{fig_equirect}
 \end{figure}
 
 \begin{opgave}
-	Op het aardoppervlak staan parallelen en meridianen loodrecht op elkaar. Blijft dat nog steeds zo als we het aardoppervlak op bovenstaande manier afbeelden?
+	Op het aardoppervlak staan parallellen en meridianen loodrecht op elkaar. Blijft dat nog steeds zo als we het aardoppervlak op bovenstaande manier afbeelden?
 	\begin{antwoord}
 		Ja.
 	\end{antwoord}
@@ -114,7 +119,7 @@ Omdat het makkelijker is om het aardoppervlak plat weer te geven, hebben we een 
 		\end{antwoord}
 	\end{subopgave}
 	\begin{subopgave}
-		 Wat heeft dit voor gevolgen als we meridianen en parallelen als verticale en horizontale lijnen in een vlak rooster afbeelden?
+		 Wat heeft dit voor gevolgen als we meridianen en parallellen als verticale en horizontale lijnen in een vlak rooster afbeelden?
 		\begin{antwoord}
 			Afstanden die gelijk zijn in de vlakke projectie zijn niet noodzakelijkerwijs gelijk op het boloppervlak. De projectie is dus niet afstand-behoudend.
 		\end{antwoord}
@@ -168,7 +173,7 @@ Een pad waarop constant dezelfde (kompas)koers wordt gevolgd wordt een "loxodroo
 
 \begin{opgave}[\ster]
 	\begin{subopgave}
-		Bekijk de vlakke kaart van de Aarde uit de vorige sectie. Is een rechte lijn op deze kaart altijd een loxodroom? In welke gevallen wel en in welke gevallen niet?
+		Bekijk de vlakke kaart van de Aarde in figuur~\ref{fig_equirect}. Is een rechte lijn op deze kaart altijd een loxodroom? In welke gevallen wel en in welke gevallen niet?
 		\begin{antwoord}
 			Nee. Alleen rechte lijnen die volledig verticaal of horizontaal lopen stellen loxodromen voor (met een koers van $0\degree, 90\degree, 180\degree, 270\degree$. 
 		\end{antwoord}
@@ -206,9 +211,9 @@ In werkelijkheid wordt de afwijking van een kompas niet alleen bepaald door het 
 
 Na dit intermezzo over het kompas, gaan we weer terug naar onze pogingen om het aardoppervlak op een kaart af te beelden.
 
-Het afbeelden van de ronde Aarde op een platte map wordt ook wel een "kaartprojectie" genoemd. Er zijn veel verschillende kaartprojecties met elk hun eigen voordelen en nadelen. In de vorige sectie ben je er al eentje tegengekomen. Deze projectie wordt heeft vele namen, waaronder "vierkante platkaart"\ en "meridiaangetrouwe cilinderprojectie".
+Het afbeelden van de ronde Aarde op een plat vlak wordt ook wel een "kaartprojectie"  genoemd. Er zijn veel verschillende kaartprojecties met elk hun eigen voordelen en nadelen. In de vorige sectie ben je er al eentje tegengekomen. Deze projectie heeft vele namen, waaronder "vierkante platkaart"\ en "meridiaangetrouwe cilinderprojectie".
 
-De term "meridiaangetrouw" slaat op het feit dat met deze projectie afstanden van stukken die langs een meridiaan lopen (niet noodzakelijkerwijs dezelfde meridiaan) op schaal zijn. Dat wil zeggen dat twee stukken die elk een meridiaan volgen en op de kaart dezelfde lengte hebben, ook op de Aarde zelf dezelfde lengte hebben.
+De term "meridiaangetrouw"  slaat op het feit dat met deze projectie lengtes van stukken die langs een meridiaan lopen (niet noodzakelijkerwijs dezelfde meridiaan) op schaal zijn. Dat wil zeggen dat twee stukken die elk een meridiaan volgen en op de kaart dezelfde lengte hebben, ook op de Aarde zelf dezelfde lengte hebben.
 
 \begin{opgave}
 	\begin{subopgave}
@@ -227,11 +232,13 @@ De term "meridiaangetrouw" slaat op het feit dat met deze projectie afstanden va
 
 Hoewel de vierkante platkaart een makkelijke projectie is om te maken en hij erg geschikt is om te werken met lengte- en breedtegraden van punten, heeft deze kaartprojectie een aantal belangrijke nadelen.
 
-Een alternatieve kaartprojectie is de zogenaamde Mercator-projectie, genoemd naar de Vlaamse cartograaf Gerardus Mercator, die deze projectie als eerste heeft geintroduceerd. Hieronder staat een voorbeeld van de Mercator-projectie.
+Een alternatieve kaartprojectie is de zogenaamde Mercator-projectie, genoemd naar de Belgische cartograaf Gerardus Mercator, die deze projectie als eerste heeft ge\"introduceerd. Hieronder staat een voorbeeld van de Mercator-projectie.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm]{Mercator_projection_SW.eps}
+	\caption{Mercator-projectie}
+	\label{fig_mercator}
 \end{figure}
 Een bijzondere eigenschap van de Mercator-projectie is dat deze richtingsgetrouw is. Dat betekent dat alle loxodromen rechte lijnen vormen op de kaart.
 
@@ -257,10 +264,10 @@ Een bijzondere eigenschap van de Mercator-projectie is dat deze richtingsgetrouw
 	\end{subopgave}
 \end{opgave}
 
-Hoewel de Mercator-projectie dus bepaalde voordelen biedt boven de vierkante platkaart, zijn er ook nadelen. En dit is iets dat waar is ongeacht welke projectie je gebruikt. Omdat het aardoppervlak niet zonder vervorming is af te beelden op een platte kaart, moeten er altijd keuzes worden gemaakt. Afhankelijk van de gewenste eigenschappen kan de meest geschikte projectie worden gekozen.
+Hoewel de Mercator-projectie dus bepaalde voordelen biedt boven de vierkante platkaart, zijn er ook nadelen. Dit geldt voor alle projectie-methoden: Elke projectie heeft voordelen en nadelen. Omdat het aardoppervlak niet zonder vervorming is af te beelden op een platte kaart, moeten er altijd keuzes worden gemaakt. Afhankelijk van de gewenste eigenschappen kan de meest geschikte projectie worden gekozen.
 
 \begin{opgave}
-	Zoek op de Mercator-projectie Nederland op en zoek een ander punt op grote afstand van Nederland, maar wel op het noordelijk halfrond (bijvoorbeeld in Noord-Amerika of Azi\"e. Probeer de kortste afstand tussen deze twee punten op het aardoppervlak te tekenen.
+	Zoek op de Mercator-projectie Nederland op en zoek een ander punt op grote afstand van Nederland, maar wel op het noordelijk halfrond (bijvoorbeeld in Noord-Amerika of Azi\"e). Probeer de kortste afstand tussen deze twee punten op het aardoppervlak te tekenen.
 	\begin{antwoord}
 		Het antwoord is niet relevant. Verderop werken de deelnemers met een projectie die grootcirkels op rechte lijnen afbeeldt en kunnen ze de kortste afstand direct bepalen door een rechte lijn te trekken op die kaart. Dit kan dan vergeleken worden met hun eerste gok in deze opgave. Oplettende deelnemers zullen nu al opmerken dat het kortste pad geen rechte lijn is op de Mercator-projectie, omdat rechte lijnen loxodromen voorstellen en loxodromen in het algemeen niet samenvallen met grootcirkels.
 	\end{antwoord}
@@ -271,7 +278,7 @@ Tot slot maken we kennis met de zogenaamde "gnomonische projectie". Dit is een b
 \begin{opgave}
 	Geef een voorbeeld van grootcirkel op het aardoppervlak.
 	\begin{hint}
-		Denk aan de parallelen. Welke parallel is het grootste?
+		Denk aan de parallellen. Welke parallel is het grootste?
 	\end{hint}
 	\begin{antwoord}
 		De evenaar.
@@ -292,6 +299,8 @@ Hieronder staat een voorbeeld van een kaart met gnomonische projectie. Merk op d
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{Gnomonic_projection_SW.eps}
+	\caption{Gnomonische projectie}
+	\label{fig_gnomonic}
 \end{figure}
 
 \begin{opgave}
